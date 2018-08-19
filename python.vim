@@ -361,9 +361,9 @@ if s:Python2Syntax()
   syn match   pythonBinError	"\<0[bB][01]*[2-9]\d*[lL]\=\>" display
 
 else
-  syn match   pythonHexError	"\<0[xX]\x*[g-zG-Z]\x*\>" display
-  syn match   pythonOctError	"\<0[oO]\=\o*\D\+\d*\>" display
-  syn match   pythonBinError	"\<0[bB][01]*\D\+\d*\>" display
+  syn match   pythonHexError "\<0[xX]\x*[g-zG-Z]\x*\>" display
+  syn match   pythonOctError "\<0[oO]\=\o*\D\+\d*\>" display
+  syn match   pythonBinError "\<0[bB][01]*\D\+\d*\>" display
 
   syn match   pythonHexNumber "\(0[xX]\)\@<=\x\+" display
   syn match   pythonOctNumber "\(0[oO]\)\@<=\o\+" display

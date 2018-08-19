@@ -542,12 +542,14 @@ call s:X("pythonOOP","ef8e8e","","","Blue","")
 call s:X("pythonMath","78bed5","","","Blue","")
 call s:X("pythonBrackets","78bed5","","","Blue","")
 call s:X("pythonInBrackets","ff0000","","","Blue","")
-call s:X("pythonNumber","f39191","","","Blue","")
 call s:X("pythonTodo","cc0000","","bold","White",s:termBlack)
 call s:X("programConstant","78bed5","","bold","White",s:termBlack)
-call s:X("pythonHexPrefix","f3f3f3","","","White",s:termBlack)
-call s:X("pythonOctPrefix","f3f3f3","","","White",s:termBlack)
-call s:X("pythonBinPrefix","f3f3f3","","","White",s:termBlack)
+call s:X("pythonHexPrefix","f3b300","","","White",s:termBlack)
+call s:X("pythonHexNumber","d75f5f","","","White",s:termBlack)
+call s:X("pythonOctPrefix","f3b300","","","White",s:termBlack)
+call s:X("pythonOctNumber","d75f5f","","","White",s:termBlack)
+call s:X("pythonBinPrefix","f3b300","","","White",s:termBlack)
+call s:X("pythonBinNumber","d75f5f","","","White",s:termBlack)
 
 " Ruby
 
