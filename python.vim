@@ -158,7 +158,10 @@ syn keyword pythonImport        import
 syn keyword pythonException     try except finally
 syn keyword pythonOperator      and in is not or
 syn keyword pythonOOP           self
-syn match pythonMath   "[+-//\*=]"
+syn match pythonMath   "[><\+-//\*=!]"
+syn match pythonBrackets   "[\[\]]"
+"syn match pythonInBrackets   "\[([^]]+)\]"
+syn match programConstant   "\<[A-Z]\+[A-Z_0-9]*\>"
 
 syn match pythonStatement   "\<yield\>" display
 syn match pythonImport      "\<from\>" display
@@ -356,14 +359,19 @@ if s:Python2Syntax()
 
   syn match   pythonOctError	"\<0[oO]\=\o*[8-9]\d*[lL]\=\>" display
   syn match   pythonBinError	"\<0[bB][01]*[2-9]\d*[lL]\=\>" display
+
 else
   syn match   pythonHexError	"\<0[xX]\x*[g-zG-Z]\x*\>" display
   syn match   pythonOctError	"\<0[oO]\=\o*\D\+\d*\>" display
   syn match   pythonBinError	"\<0[bB][01]*\D\+\d*\>" display
 
-  syn match   pythonHexNumber	"\<0[xX]\x\+\>" display
-  syn match   pythonOctNumber "\<0[oO]\o\+\>" display
-  syn match   pythonBinNumber "\<0[bB][01]\+\>" display
+  syn match   pythonHexNumber "\(0[xX]\)\@<=\x\+" display
+  syn match   pythonOctNumber "\(0[oO]\)\@<=\o\+" display
+  syn match   pythonBinNumber "\(0[bB]\)\@<=[01]\+" display
+  
+  syn match   pythonHexPrefix "0[xX]\ze\x\+" display
+  syn match   pythonOctPrefix "0[oO]\ze\o\+" display
+  syn match   pythonBinPrefix "0[bB]\ze[01]\+" display
 
   syn match   pythonNumberError	"\<\d\+\D\>" display
   syn match   pythonNumberError	"\<0\d\+\>" display

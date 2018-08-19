@@ -536,12 +536,18 @@ hi! link phpVarSelector Identifier
 " Python
 
 hi! link pythonOperator Statement
-call s:X("pythonBuiltinFunc","f4b48e","","","Yellow","")
-call s:X("pythonOperator","6e79a6","","","Yellow","")
-call s:X("pythonOOP","bdc3ef","","","Blue","")
-call s:X("pythonMath","6ea698","","","Blue","")
+call s:X("pythonBuiltinFunc","f4b48e","","","","")
+call s:X("pythonOperator","6e79a6","","","","")
+call s:X("pythonOOP","ef8e8e","","","Blue","")
+call s:X("pythonMath","78bed5","","","Blue","")
+call s:X("pythonBrackets","78bed5","","","Blue","")
+call s:X("pythonInBrackets","ff0000","","","Blue","")
 call s:X("pythonNumber","f39191","","","Blue","")
 call s:X("pythonTodo","cc0000","","bold","White",s:termBlack)
+call s:X("programConstant","78bed5","","bold","White",s:termBlack)
+call s:X("pythonHexPrefix","f3f3f3","","","White",s:termBlack)
+call s:X("pythonOctPrefix","f3f3f3","","","White",s:termBlack)
+call s:X("pythonBinPrefix","f3f3f3","","","White",s:termBlack)
 
 " Ruby
 
