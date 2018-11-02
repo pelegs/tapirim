@@ -160,7 +160,6 @@ syn keyword pythonOperator      and in is not or
 syn keyword pythonOOP           self
 syn match pythonMath   "[><\+-//\*=!]"
 syn match pythonBrackets   "[\[\]]"
-"syn match pythonInBrackets   "\[([^]]+)\]"
 syn match programConstant   "\<[A-Z]\+[A-Z_0-9]*\>"
 
 syn match pythonStatement   "\<yield\>" display
