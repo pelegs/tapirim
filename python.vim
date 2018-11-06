@@ -172,9 +172,11 @@ if s:Python2Syntax()
   syn keyword pythonImport      as
   syn match   pythonFunction    "[a-zA-Z_][a-zA-Z0-9_]*" display contained
 else
-  syn keyword pythonStatement   as nonlocal None
+  syn keyword pythonStatement   as nonlocal
+  syn keyword pythonNone        None
   syn match   pythonStatement   "\<yield\s\+from\>" display
-  syn keyword pythonBoolean     True False
+  syn keyword pythonBooleanTrue True
+  syn keyword pythonBooleanFalse False
   syn match   pythonFunction    "\%([^[:cntrl:][:space:][:punct:][:digit:]]\|_\)\%([^[:cntrl:][:punct:][:space:]]\|_\)*" display contained
 endif
 
@@ -549,7 +551,7 @@ if version >= 508 || !exists("did_python_syn_inits")
   HiLink pythonHexError         Error
   HiLink pythonBinError         Error
 
-  HiLink pythonBoolean          Boolean
+  "HiLink pythonBoolean          Boolean
 
   HiLink pythonBuiltinObj       Structure
   "HiLink pythonBuiltinFunc      Function

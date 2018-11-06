@@ -538,7 +538,10 @@ hi! link phpVarSelector Identifier
 
 hi! link pythonOperator Statement
 call s:X("pythonBuiltinFunc","f4b48e","","","","")
+call s:X("pythonNone","ba1caf","","","","")
 call s:X("pythonOperator","6e79a6","","","","")
+call s:X("pythonBooleanTrue", "4ccf6a","","bold","","")
+call s:X("pythonBooleanFalse","ff6a4c","","bold","","")
 call s:X("pythonOOP","ef8e8e","","","Blue","")
 call s:X("pythonMath","78bed5","","","Blue","")
 call s:X("pythonBrackets","78bed5","","","Blue","")
